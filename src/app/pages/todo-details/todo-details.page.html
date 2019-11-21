@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Service</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  <ion-list lines="full">
+    
+
+    <ion-item>
+        
+      <ion-input required type="text" placeholder="Masukkan Nama  " [(ngModel)]="todo.task"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <!-- <ion-label>Service</ion-label>
+        <ion-select required type="text" [(ngModel)]="todo.priority" placeholder="Select One">
+          <ion-select-option value="Pembelian Barang">Pembelian Barang</ion-select-option>
+          <ion-select-option value="Komplen">Komplen</ion-select-option>
+        </ion-select> -->
+
+        <!-- <ion-input required type="text" placeholder="Masukkan Chat" [(ngModel)]="todo.priority"></ion-input> -->
+
+        <!-- <ion-label>Chat</ion-label> -->
+        <ion-textarea placeholder="Masukkan Chat" clearOnEdit="true" [(ngModel)]="todo.priority"></ion-textarea>
+      </ion-item>
+
+      
+    
+  </ion-list>
+  <ion-button expand="block" color="light" (click)="saveTodo()">Simpan</ion-button>
+</ion-content>

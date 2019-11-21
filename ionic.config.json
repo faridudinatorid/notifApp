@@ -1,5 +1,7 @@
 {
   "name": "notifApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
